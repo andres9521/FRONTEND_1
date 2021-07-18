@@ -1,0 +1,56 @@
+/*globales*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;         
+}
+ul {
+    list-style: none;    
+    font-size: 400;
+}
+
+/*Header*/
+.header-div {
+    background-color: #222222;
+    color: #F3F3F3;    
+    font-size: 400;
+}
+.div-nav {
+    background-color: #F0A83E;
+    color: #ffffff;    
+}
+.logo {
+    color: #ffffff;
+}
+
+span {
+    color: #3C2313;
+}
+
+/*main*/
+
+.a-producto{
+    color: #666666;
+
+}
+h2 {
+    color: #3C2313;
+    font-size: 700;
+}
+
+.suscribete {
+    background-color: #F0A83E;
+}
+.masinfo{
+    background-color: #3C2313;
+    color: #ffffff;
+}
+
+/*footer*/
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+}
+
