@@ -18,85 +18,131 @@
 
     <header>
         <div class="header-div">
-            <p>Grandes ofertas en comederos</p>
-            <p>Español</p>
-            <p>ARG$</p>
+            <!-- cambiar nombre a mensaje-header-div -->
+            <div>
+                <p>Grandes ofertas en comederos</p>
+            </div>
+            <div class="idioma">
+                <p>Español</p>
+                <p>ARG$</p>
+            </div>
         </div>
         <div class="div-nav">
-            <a class="logo" href="#"><img src="img/Cat.svg" alt="imagen gato">
-                <h1><span>Front</span>Cat&Dog</h1><img src="img/Dog.svg" alt="imagen perro">
-            </a>
-            <nav class="nav-principal">
-                <ul>
-                    <!-- 
+            <div>
+                <a class="logo" href="#"><img src="img/Cat.svg" alt="imagen gato">
+                    <h1><span>Front</span>Cat&Dog</h1><img src="img/Dog.svg" alt="imagen perro">
+                </a>
+            </div>
+            <div>
+                <nav class="nav-principal">
+                    <ul>
+                        <!-- 
                             Option + click en Mac muchos cursores
                             Alt + click muchos cursores
                             ctrl + d para tomar elementos con el mismo texto
                         -->
-                    <li><i class="fas fa-paw"></i><a href="#">Categorías</a></li>
-                    <li><i class="fas fa-paw"></i><a href="#">Pets</a></li>
-                    <li><i class="fas fa-paw"></i><a href="#">Nosotros</a></li>
-                    <li><i class="fas fa-paw"></i><a href="#">Contactanos</a></li>
-                </ul>
-            </nav>
+                        <li><i class="fas fa-paw"></i><a href="#">Categorías</a></li>
+                        <li><i class="fas fa-paw"></i><a href="#">Pets</a></li>
+                        <li><i class="fas fa-paw"></i><a href="#">Nosotros</a></li>
+                        <li><i class="fas fa-paw"></i><a href="#">Contactanos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
 
-        <section>
-            <img src="img/foto.svg" alt="banner">
-            <p>¡Es un placer tenerte aquí!</p>
-            <p>¡Comederos en descuento!</p>
-            <a href="#">COMEDEROS</a>
+        <section class="banner">
+            <div class="banner-div">
+                <div class="back-blanco">
+                    <p>¡Es un placer tenerte aquí!</p>
+                </div>
+                <div class="parrafo">
+                    <p>¡Comederos en descuento!</p>
+                </div>
+                <div class="back-naranja"><a href="#">COMEDEROS</a></div>
+            </div>
+        </section>
+
+        <section class="contenedor">
+            <div><img src="img/pawprint 1.svg" alt="huella"></div>
+            <div>
+                <h2>Productos Destacados</h2>
+            </div>
+            <div class="ul-div">
+                <ul>
+                    <li><a class="a-producto" href="#">Comederos</a></li>
+                    <li><a class="a-producto" href="#">Accesorios</a></li>
+                    <li><a class="a-producto" href="#">Comida</a></li>
+                </ul>
+            </div>
+            </div>
+        </section>
+
+        <section class="main-container-productos">
+            <div class="container-productos">
+                <div class="productos">
+                    <img src="img/churrasquito.svg" alt="Churrasquito">
+                    <h2>Juguete Churrasquito</h2>
+                    <p>$150</p>
+                </div>
+                <div class="productos">
+                    <img src="img/comedero.svg" alt="comedero de perros">
+                    <h2>Comedero para perro</h2>
+                    <p>$250</p>
+                </div>
+                <div class="productos">
+                    <img src="img/Huesito.svg" alt="juguete Huesito">
+                    <h2>Juguete Huesito</h2>
+                    <p>$650</p>
+                </div>
+            </div>
         </section>
 
         <section>
-            <img src="img/pawprint 1.svg" alt="huella">
-            <h2>Productos Destacados</h2>
-            <ul>
-                <li><a class="a-producto" href="#">Comederos</a></li>
-                <li><a class="a-producto" href="#">Accesorios</a></li>
-                <li><a class="a-producto" href="#">Comida</a></li>
+            <div class="container-form">
+                <h2 class="form-titel">Contáctanos</h2>
+                <form class="form" action="#" method="POST">
+                    <input type="text" name="nombre" placeholder="nombre y apellido">
+                    <input type="email" name="email" placeholder="ingresa tu correo electrónico">
+                    <input type="tel" name="telefono" placeholder="telefono">
+                    <div class="form-summit">
+                        <button>Resetear</button>
+                        <input type="button" value="Enviar">
+                    </div>
 
-            </ul>
-
-
-            <div>
-                <img src="img/churrasquito.svg" alt="Churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </div>
-            <div>
-                <img src="img/comedero.svg" alt="comedero de perros">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-            </div>
-            <div>
-                <img src="img/Huesito.svg" alt="juguete Huesito">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
-            </div>
-        </section>
-
-        <section class="suscribete">
-            <div>
-                <p>Suscríbete para más novedades</p>
+                </form>
             </div>
 
-        </section>
-
-        <section class="masinfo">
-            <p><i class="fas fa-map-marker-alt"></i>Localidad</p>
-            <p><i class="fas fa-phone-alt"></i>Teléfono</p>
-            <p><i class="far fa-envelope"></i>Correo Electrónico</p>
         </section>
 
     </main>
 
     <footer>
+        <div class="footer-suscripcion">
+            <p><i class="far fa-envelope"></i> Suscríbete para más novedades</p>
+            <form action="#">
+                <input class="input-footer" type="email" name="email" placeholder="ingresa tu correo electrónico">
+                <input class="boton-suscribcion" type="button" value="Suscribirme">
+            </form>
+        </div>
+        <div class="container-footer-top">
+            <div class="masinfo">
+                <p><i class="fas fa-map-marker-alt"></i> Localidad</p>
+                <p><i class="fas fa-phone-alt"></i> Teléfono</p>
+                <p><i class="far fa-envelope"></i> Correo Electrónico</p>
+            </div>
+            <div>
+                <a class="logo-footer logo" href="#"><img src="img/Cat.svg" alt="imagen gato">
+                    <h2><span>Front</span>Cat&Dog</h2><img src="img/Dog.svg" alt="imagen perro">
+                </a>
+            </div>
+        </div>
+        
+        <div class="container-footer-bottom"><p>Todos los derechos reservados Front End</p></div>
+        
 
-        <p>Todos los derechos reservados Front End</p>
     </footer>
 
 </body>

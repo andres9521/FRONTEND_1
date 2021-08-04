@@ -10,18 +10,52 @@ ul {
     font-size: 400;
 }
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+
 /*Header*/
 .header-div {
     background-color: #222222;
     color: #F3F3F3;    
     font-size: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.idioma {
+    display: flex;
+    
+}
+header p {
+    padding: 20px;
+    justify-content: space-between;
+    display: inline-block;
 }
 .div-nav {
     background-color: #F0A83E;
-    color: #ffffff;    
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;    
+}
+.nav-principal ul {
+    display: flex;
+    padding: 20px;
+    
+}
+.nav-principal li a {
+    justify-content: space-around;
+    padding: 10px;
+    color: #ffffff;
 }
 .logo {
     color: #ffffff;
+    display: flex;
+    padding: 10px;
 }
 
 span {
@@ -30,27 +64,191 @@ span {
 
 /*main*/
 
+
+.banner{
+    background-image: url(../img/foto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-div{
+    text-align: center;       
+}
+.back-blanco  p{
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    border-radius: 5px;
+    
+}
+.parrafo p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #3C2313;
+    padding: 20px;
+}
+.back-naranja a{
+    background-color: #F0A83E;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
 .a-producto{
     color: #666666;
 
 }
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+.contenedor h2, .form-titel{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+/* .contenedor.huella{
+    
+    
+} */
+.ul-div li{
+    padding: 10px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px
+   
+}
+.main-container-productos{
+    width: 70%;
+    margin: 0 auto; /*para centrar contenedores*/
+}
+.container-productos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;    
+}
 h2 {
     color: #3C2313;
-    font-size: 700;
+    font-weight: 700;
+}
+.productos{
+    text-align: center;
+    background-color: #FBFAF6;
+    width: 120%;
+    margin: 0 10px;
+}
+.productos p{
+    color: #F0A83E;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 700;
+}
+.container-form{
+    width: 20%;
+    margin: 100px auto;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form > input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #3C2313;
+    border: none;
+}
+.form-summit{
+    /* display: flex; */
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 41px;
+
+}
+.form-summit button,.form-summit input,.boton-suscribcion{    
+    border: none;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-summit button{
+    background-color: #8A8787;
+    margin-right: 10px;
+    
+}
+.form-summit input{
+    background-color: #F0A83E;
+    margin-left: 10px;   
 }
 
-.suscribete {
+.footer-suscripcion {
     background-color: #F0A83E;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
 }
-.masinfo{
+
+.boton-suscribcion{
+    background-color: #3C2313;
+    
+}
+
+.input-footer{
+    border: none;
+    padding: 13px;
+    border-radius: 15px;
+    width: 500px;
+}
+.masinfo p{
     background-color: #3C2313;
     color: #ffffff;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container-footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C2313;
+    height: 300px;
+    padding: 30px;
+}
+
+.logo-footer span{
+ color: #ffffff;
+}
+.logo-footer h2{
+    color: #F0A83E;
 }
 
 /*footer*/
-footer {
+.container-footer-bottom {
     background-color: #222222;
     color: #ffffff;
     text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px;
 }
 
